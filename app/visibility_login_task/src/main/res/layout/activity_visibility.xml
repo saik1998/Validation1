@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VisibilityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+
+            android:text="LogIn" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="5dp"
+
+              android:id="@+id/view1"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_signup"
+                android:text="sign Up" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+
+                android:id="@+id/view2"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <include
+            layout="@layout/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include
+            layout="@layout/signup_layout"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+
+<!--        -->
+
+<!--    <View-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:background="@color/gray" />-->
+
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:weightSum="2">-->
+
+<!--       -->
+<!--        <View-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:background="@color/gray"/>-->
+<!--&lt;!&ndash;        <include&ndash;&gt;-->
+<!--            layout="@layout/login_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <include-->
+<!--            layout="@layout/signup_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+
+
+
+
+
+
+
